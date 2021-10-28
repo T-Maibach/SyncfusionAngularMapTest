@@ -5,32 +5,10 @@
     "outDir": "./out-tsc/app",
     "types": [],
     "paths": {
-      "@components/*": [
-        "src/app/components/*"
-      ],
-      "@services/*": [
-        "src/app/services/*"
-      ],
-      "@pipes/*": [
-        "src/app/pipes/*"
-      ],
-      "@models/*": [
-        "src/app/models/*"
-      ],
-      "@util/*": [
-        "src/app/util/*"
-      ],
-      "@guards/*": [
-        "src/app/guards/*"
-      ],
-      "@environment/*": [
-        "src/environments/*"
-      ],
       "@angular/*": [
         "./node_modules/@angular/*"
       ]
     }
-  }
 },
 "files": [
 "src/main.ts",
