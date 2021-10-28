@@ -3,13 +3,40 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
-  },
-  "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
-  ],
-  "include": [
-    "src/**/*.d.ts"
-  ]
+    "types": [],
+    "paths": {
+      "@components/*": [
+        "src/app/components/*"
+      ],
+      "@services/*": [
+        "src/app/services/*"
+      ],
+      "@pipes/*": [
+        "src/app/pipes/*"
+      ],
+      "@models/*": [
+        "src/app/models/*"
+      ],
+      "@util/*": [
+        "src/app/util/*"
+      ],
+      "@guards/*": [
+        "src/app/guards/*"
+      ],
+      "@environment/*": [
+        "src/environments/*"
+      ],
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ]
+    }
+  }
+},
+"files": [
+"src/main.ts",
+"src/polyfills.ts"
+],
+"include": [
+"src/**/*.d.ts"
+]
 }
